@@ -20,8 +20,8 @@
 
 <div align="center">
 
-**[NatPunch](https://github.com/NekoBoxHQ/NatPunch)** 轻松内网穿透 ·
-**[NekoBoxPro](https://github.com/NekoBoxHQ/NekoBoxPro)** sing-box 现代化 GUI 客户端 ·
-**[canoe](https://github.com/NekoBoxHQ/canoe)** 轻舟 · Windows 代理工具
+**[NatPunch](https://github.com/NekoBoxHQ/NatPunch)** · 轻松内网穿透<br>
+**[NekoBoxPro](https://github.com/NekoBoxHQ/NekoBoxPro)** · sing-box 现代化 GUI 客户端<br>
+**[canoe](https://github.com/NekoBoxHQ/canoe)** · 轻舟 · Windows 代理工具
 
 </div>
