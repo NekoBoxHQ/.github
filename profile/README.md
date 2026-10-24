@@ -14,6 +14,8 @@
 
 <img src="https://raw.githubusercontent.com/NekoBoxHQ/.github/main/profile/cards/stats.svg" alt="数据总览">
 
+<img src="https://raw.githubusercontent.com/NekoBoxHQ/.github/main/profile/cards/productive-time.svg" alt="提交时段 · UTC+8">
+
 </div>
 
 <div align="center">
