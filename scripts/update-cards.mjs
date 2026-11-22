@@ -70,7 +70,7 @@ async function grab(name) {
  * 提交时段（UTC+8）—— 组织卡片没有这一张（托管接口只按人统计），
  * 自己数一遍公开仓库的提交时间画出来，样式跟其它四张对齐。
  */
-const REPOS = ['NatPunch', 'NekoBoxPro', 'canoe'];
+const REPOS = ['NatPunch', 'canoe'];
 
 async function commitsByHour() {
   const counts = new Array(24).fill(0);
@@ -83,6 +83,10 @@ async function commitsByHour() {
         `https://api.github.com/repos/${USER}/${repo}/commits?per_page=100&page=${page}`,
         { headers }
       );
+      if (res.status === 404) {
+        console.warn(`⚠️ ${repo}: 仓库不存在，跳过`);
+        break;
+      }
       if (!res.ok) throw new Error(`${repo}: HTTP ${res.status}`);
       const list = await res.json();
       if (!Array.isArray(list) || list.length === 0) break;
